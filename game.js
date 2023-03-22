@@ -178,7 +178,7 @@ class Game {
         for(let rowIndex = 0; rowIndex < grid.length; rowIndex++){
             if(grid[rowIndex].includes(2048)) return 1;
         }
-        
+
         //If there's still spots to play on
         for(let rowIndex = 0; rowIndex < grid.length; rowIndex++){
             if(grid[rowIndex].includes(0)) return;

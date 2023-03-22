@@ -1,4 +1,10 @@
 {
+  "name": "2048-console",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kiyumi",
+  "license": "ISC",
+  "description": "A recreation of the game 2048 using Node.js",
   "dependencies": {
     "prompt-sync": "^4.2.0"
   }
