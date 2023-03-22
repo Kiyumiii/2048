@@ -175,11 +175,14 @@ class Game {
 
     isGameEvents(){
         let grid = this.#grid;
-        if(grid.includes(2048)) {
-            return 1;
+        for(let rowIndex = 0; rowIndex < grid.length; rowIndex++){
+            if(grid[rowIndex].includes(2048)) return 1;
         }
+        
         //If there's still spots to play on
-        if(grid.includes(0)) return;
+        for(let rowIndex = 0; rowIndex < grid.length; rowIndex++){
+            if(grid[rowIndex].includes(0)) return;
+        }
 
         //Check if a move is still possible
         for(let rowIndex = 0; rowIndex < grid.length; rowIndex++){

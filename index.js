@@ -8,7 +8,7 @@ while(true){
         if(!size) size = 4;
     } while(isNaN(size) || size < 4 || size > 16)
 
-    let game = new Game(size);
+    let game = new Game(parseInt(size));
     const allGameEvents = game.getAllGameEvents;
     console.clear();
 
@@ -28,7 +28,7 @@ while(true){
         do {
             direction = prompt("Please enter a direction (WASD): ");
         } while(!(["w", "a", "s", "d"].includes(`${direction.toLowerCase()}`)))
-        game.pushCellsDirection(direction);
+        game.pushCellsDirection(direction.toLowerCase());
         console.clear();
     }
 
